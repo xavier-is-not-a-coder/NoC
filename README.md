@@ -51,24 +51,9 @@ The system works with configurable bitframes (defaulted to **12 bits** in testbe
 
 The project includes an advanced dual-node verification environment (**`tb_two_routers.vhd`**) to validate cascading inter-router handshakes and dynamic crossbar routing.
 
-### Running Simulations (Using GHDL Example)
-To verify the system functionality via CLI terminal, execute the following commands:
-
-```bash
-# 1. Analyze dependencies and source entities
-ghdl -a FIFO_Buffer.vhd
-ghdl -a Routing_unit.vhd
-ghdl -a Crossbar_switch.vhd
-ghdl -a Arbiter.vhd
-ghdl -a Router.vhd
-
-# 2. Analyze the multi-router testbench
-ghdl -a tb_two_routers.vhd
-
-# 3. Elaborate design top-level
-ghdl -e tb_two_routers
-
-# 4. Run the validation checks
-ghdl -r tb_two_routers --vcd=simulation.vcd
-
+---
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/8b0e4d76-eb35-44c7-b281-ac6993f2d44d" />
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/c8477e90-e8c8-413c-9ec4-548e00e2397f" />
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/2d403460-215f-4c64-a0f4-acfd125389c9" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/de639725-f468-4a83-9695-a316cc40e034" />
 
